@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <title>EscapeAway</title>
+    <link rel="icon" href="bilder/logo.png"/>
+  </head>
+  <style>
+    * {
+      /*fjerne margine og padding for alle elementer. stjerna betyr alle elementer*/
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box; /*trengs den?*/
+    }
+    header {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      background-color: rgb(255, 191, 0);
+
+      /*position: fixed;*/
+    }
+    body {
+      position: relative;
+      min-height: 100vh;
+      padding-bottom: 7rem;
+    }
+    main {
+      display: grid;
+
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+      min-height: 100vh;
+    }
+    .Reisekalender {
+      grid-column: span 1;
+    }
+    .topp {
+      display: flex;
+      justify-content: center;
+      justify-content: space-evenly;
+      align-items: center;
+      padding: 0rem;
+      font-size: 130%;
+      font-weight: bold;
+      max-height: 5.11rem;
+      
+
+    }
+    #video {
+      display: flex;
+      position: relative;
+      /* background-clip: content-box;*/
+      top: 0;
+      left: 0;
+      width: 1200%;
+      height: auto;
+      object-fit: cover;
+      display: grid;
+      margin: 0;
+      left: 0;
+    }
+    .hovedside {
+      display: flex;
+
+      position: absolute;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid;
+    }
+    .boks {
+      display: flex;
+
+      justify-content: center;
+      justify-content: space-evenly;
+
+      align-items: center;
+      min-width: 5rem;
+      top: 50;
+      left: 10;
+      color: white;
+      border: 1px solid;
+    }
+    .logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .bilde {
+      display: flex;
+      min-height: 13.5vh;
+
+      height: 70%;
+      width: auto;
+      width: min-content;
+      align-items: center;
+    }
+    .link {
+      text-decoration: none;
+      color: black;
+      text-align: center;
+    }
+
+    footer {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      min-height: 8rem;
+      background-color: black;
+      margin: 0;
+      padding: 0;
+      right: 0;
+      left: 0;
+      color: white;
+      height: 7rem;
+    }
+
+    .bunntekst {
+      display: flex;
+      justify-content: space-between;
+      justify-content: space-evenly;
+      justify-content: center;
+      margin-right: 0;
+      padding-right: 0;
+      background-color: black;
+      padding-top: 1rem;
+      text-decoration: none;
+      color: white;
+    }
+
+    .copyright /*fiks*/ {
+      display: flex;
+      bottom: 0;
+      grid-column: span 4;
+      position: relative;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 0.5rem;
+    }
+    .Reisekalender {
+      grid-column: span 2;
+      padding-left: 15%;
+    }
+    .type_reise {
+      grid-column: span 2;
+      display: flex;
+      justify-content: flex-end;
+    }
+    .kontakt_oss {
+      grid-column: span 3;
+    }
+    .hamburger {
+      display: flex;
+      justify-content: flex-end;
+      height: 3rem;
+      width: 2.5rem;
+      align-items: center;
+    }
+    .hamburger {
+      grid-column: span 2;
+      display: flex;
+      justify-content: flex-end;
+    }
+    .søk {
+      height: 2rem;
+    }
+    .søke {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .mellom {
+      grid-column: span 2;
+    }
+    .hvit {
+      background-color: white;
+    }
+    .om_oss {
+      grid-column: span 2;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .tittel1 {
+      font-weight: bold;
+    }
+    .en {
+      grid-column: span 2;
+      display: flex;
+      min-width: 5rem;
+    }
+  </style>
+  <body>
+    <section>
+      <header>
+        <a
+          href="file:///C:/Users/hanflu001/OneDrive%20-%20IKT%20Agder/VG2/IT1/egne%20produkter%20(oppgaver)/innleveringsoppgaver/reise%20til%20Hellas/index.html"
+        >
+          <img class="hvit bilde logo topp reisekalender" src="bilder/hele_logo.png"
+        /></a>
+        <a
+          href="https://www.pexels.com/video/aerial-view-of-beautiful-resort-2169880/"
+          class="hvit link topp Reisekalender"
+          >Reisekalender</a
+        >
+        <a
+          href="https://www.pexels.com/video/aerial-view-of-beautiful-resort-2169880/"
+          class="hvit link topp type_reise"
+          >Type reise</a
+        >
+        <a
+          href="https://www.pexels.com/video/aerial-view-of-beautiful-resort-2169880/"
+          class="hvit link topp om_oss"
+          >Om oss</a
+        >
+        <a
+          href="https://www.pexels.com/video/aerial-view-of-beautiful-resort-2169880/"
+          class="hvit link topp kontakt_oss"
+          >Kontakt oss</a
+        >
+
+        <a
+          href="https://www.pexels.com/video/aerial-view-of-beautiful-resort-2169880/"
+          class="link topp meny"
+          ><img class="topp søk" src="bilder/søkeikon.png" alt="søkeikon" />
+        </a>
+        <a
+          id="meny"
+          href="https://www.pexels.com/video/aerial-view-of-beautiful-resort-2169880/"
+          class="link topp meny"
+        >
+          <img src="bilder/hamburger-tynn.png" class="topp hamburger"
+        /></a>
+      </header>
+    </section>
+    <main>
+      <section>
+        <video autoplay muted loop id="video">
+          <source
+            src="videoer/mixkit-top-shot-of-the-seashore-with-crystal-clear-water-30368-medium.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </section>
+
+      <section class="hovedside">
+        <article class="boks en">ewwwr</article>
+        <article class="boks fire"></article>
+        <article class="boks to">ewww</article>
+        <article class="boks tre">jj</article>
+        <article class="boks fire">e</article>
+      </section>
+    </main>
+    <footer>
+      <div class="tittel1 bunntekst">Kontakt oss</div>
+      <div class="tittel1 bunntekst">Praktisk informasjon</div>
+      <div class="tittel1 bunntekst">Nyttige linker</div>
+      <div class="tittel1 bunntekst">Firma</div>
+      <a href="html-sider/ledig_stilling.html" class="bunntekst">Ledige stillinger</a>
+      <a href="html-sider/presse.html" class="bunntekst">Presse</a>
+      <a href="html-sider/investor.html" class="bunntekst">Investor relations</a>
+      <a href="html-sider/mobilapp.html" class="bunntekst"
+        >Mobilapp - hotellsøk på farten</a
+      >
+      <a href="html-sider/business.html" class="bunntekst">EscapeAway Business Studio</a>
+      <a href="html-sider/terms.html" class="bunntekst">Terms and Cookies</a>
+      <a class="bunntekst"></a>
+      <a class="bunntekst"></a>
+      <a class="bunntekst"></a>
+      <a href="html-sider/hjelp.html" class="bunntekst">Hjelp</a>
+      <a class="bunntekst"></a>
+      <a class="bunntekst"></a>
+
+      <a class="copyright bunntekst">Copyright © 2023 Travel Off Path</a>
+      <div></div>
+      <div></div>
+      <div></div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <title>EscapeAway</title>
+    <link rel="icon" href="Bilde2.png" />
+  </head>
+  <style>
+    * {
+      /*fjerne margine og padding for alle elementer*/
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box; /*trengs den?*/
+    }
+    header {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      border: 1px solid black;
+
+      /*position: fixed;*/
+    }
+    body {
+      position: relative;
+      min-height: 100vh;
+      padding-bottom: 7rem;
+    }
+    main {
+      display: grid;
+
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      border: 1px solid black;
+
+      min-height: 100vh;
+    }
+    .Reisekalender {
+      grid-column: span 1;
+    }
+    .topp {
+      display: flex;
+
+      justify-content: center;
+      align-items: center;
+      padding: 0rem;
+      font-size: 110%;
+
+      max-height: 5rem;
+    }
+    #video {
+      position: relative;
+      background-clip: content-box;
+      top: 0;
+      left: 0;
+      width: 1200%;
+      height: auto;
+      object-fit: cover;
+      display: grid;
+      border: 1px solid;
+      display: inline-flex;
+      margin: 0;
+      left: 0;
+    }
+    .logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .bilde {
+      display: flex;
+      min-height: 13.5vh;
+
+      height: 70%;
+      width: auto;
+      width: min-content;
+      align-items: center;
+    }
+    .link {
+      text-decoration: none;
+      color: black;
+      text-align: center;
+    }
+
+    footer {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      min-height: 4rem;
+      background-color: black;
+      margin: 0;
+      padding: 0;
+      right: 0;
+      left: 0;
+      color: white;
+      height: 7rem;
+    }
+
+    .bunntekst {
+      display: flex;
+      justify-content: space-between;
+      justify-content: space-evenly;
+      justify-content: center;
+      margin-right: 0;
+      padding-right: 0;
+      background-color: black;
+    }
+
+    .copyright /*fiks*/ {
+      display: flex;
+      bottom: 0;
+      position: relative;
+      align-items: center;
+      justify-content: center;
+    }
+    .Reisekalender {
+      grid-column: span 2;
+      padding-left: 15%;
+    }
+    .type_reise {
+      grid-column: span 2;
+    }
+    .kontakt_oss {
+      grid-column: span 2;
+    }
+  </style>
+  <body>
+    <section>
+      <header>
+        <a href="file:///C:/Users/hanflu001/OneDrive%20-%20IKT%20Agder/VG2/IT1/egne%20produkter%20(oppgaver)/innleveringsoppgaver/reise%20til%20Hellas/index.html">
+        <img class="bilde logo topp reisekalender" src="hele_logo.png" /></a>
+        <a
+          href="https://www.pexels.com/video/aerial-view-of-beautiful-resort-2169880/"
+          class="link topp Reisekalender"
+          >Reisekalender</a
+        >
+        <a
+          href="https://www.pexels.com/video/aerial-view-of-beautiful-resort-2169880/"
+          class="link topp type_reise"
+          >Type reise</a
+        >
+        <a
+          href="https://www.pexels.com/video/aerial-view-of-beautiful-resort-2169880/"
+          class="link topp om_oss"
+          >Om oss</a
+        >
+        <a
+          href="https://www.pexels.com/video/aerial-view-of-beautiful-resort-2169880/"
+          class="link topp kontakt_oss"
+          >Kontakt oss</a
+        >
+        <article class="topp"></article>
+        <article class="topp">r</article>
+        <article class="topp">r</article>
+      </header>
+    </section>
+    <main>
+      <section>
+        <video autoplay muted loop id="video">
+          <source
+            src="mixkit-top-shot-of-the-seashore-with-crystal-clear-water-30368-medium.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </section>
+      <section>
+        <article>jiji</article>
+      </section>
+    </main>
+    <footer>
+      <div class="bunntekst">Kontakt oss</div>
+      <div class="bunntekst">Praktisk informasjon</div>
+      <div class="bunntekst">Nyttige linker</div>
+      <div class="bunntekst">Firma</div>
+      <div class="bunntekst">Ledige stillinger</div>
+      <div class="bunntekst">Presse</div>
+      <div class="bunntekst">Investor relations</div>
+      <div class="bunntekst">Mobilapp - hotellsøk på farten</div>
+      <div class="bunntekst">EscapeAway Business Studio</div>
+      <div class="bunntekst">eje</div>
+      <div class="bunntekst">eje</div>
+      <div class="bunntekst">eje</div>
+      <div class="copyright">Copyright © 2023 Travel Off Path</div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  body {
+    background-color: #fdfafa;
+  }
+  
+  
+  
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  
+  
+  .navbar {
+    height: 6vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    margin: auto;
+  }
+  
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown ul {
+    position: absolute;
+    background: #fff;
+    margin-top: 10px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+    border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: all 0.6s ease;
+    left: 0px;
+  }
+  
+  .dropdown li {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .dropdown li:hover {
+    background-color: rgb(255, 191, 0);
+  }
+  
+  .navbar button,
+  .deco {
+    background: none;
+    border: none;
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+    /*cursor: pointer;*/
+  }
+  
+  .navbar button:hover,
+  .deco:hover {
+    color: rgb(146, 146, 146);
+  }
+  
+  .dropdown button:focus+ul {
+    opacity: 1;
+    pointer-events: all;
+    
+  }
+  
+ 
+
+/*.autor {
+color: #e11d1d;
+font-size: 16px;
+}*/
+
+/*.printButton {
+border: none;
+font-size: 18px;
+border-radius: 5px;
+width: 80px;
+height: 20px;
+cursor: pointer;
+color: black;
+background: darkslategray;
+}*/
+
+/*@media print {
+.noPrint {
+  display: none;
+}
+}*/
+</style>
+<header class="noPrint">
+<a href="index.html"><img src="https://via.placeholder.com/80" alt="Logo strony" class="center"></a>
+<div class="navbar">
+  <button><a href="index.html" class="deco">Główna</a></button>
+  <div class="dropdown">
+    <button>Ciasta</button>
+    <ul>
+      <li><a href="biszkopt.html">Biszkopt</a></li>
+      <li><a href="beza.html">Beza</a></li>
+      <li><a href="makowiec.html">Makowiec</a></li>
+    </ul>
+  </div>
+  <div class="dropdown">
+    <button>Pieczywo</button>
+    <ul>
+      <li><a href="chleb.html">Chleb</a></li>
+      <li><a href="bulki.html">Bułki</a></li>
+      <li><a href="bulkiNaSlodko.html">Bułki na słodko</a></li>
+    </ul>
+  </div>
+  <button><a href="informacje.html" class="deco">Informacje</a></button>
+</div>
+</header>
