@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalender</title>
+    <style>
+    body{
+      font-family: sans-serif;
+    }
+    h1{
+      font-size: 350%;
+      text-align: center;
+      margin-top: 1rem;
+    }
+    h2{
+        margin: 4rem;
+        font-size: 300%;
+        text-align: center;
+    }
+    #section{
+        border: 1px solid black;
+        background-color: rgb(255, 191, 0);
+        margin-left: 2%;
+        margin-right: 2%;
+        border-radius: 1.5rem;
+    }
+    #tabell{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        font-size: 2rem;
+        background-color: rgb(255, 230, 100);
+    }
+    .dag{
+      font-weight: bold;
+      font-size: 120%;
+      background-color:#4161ff;
+      -webkit-text-stroke-width: 0.02rem;
+      -webkit-text-stroke-color: white;
+      border-bottom: solid black 0.35rem;
+      margin-top: 4%;
+    }
+    article {
+        margin: 4%;
+        padding: 6%;
+        background-color: #b0bdff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0.4rem;
+        font-weight:;
+        border: solid 0.2rem ;
+    }
+    .neste{
+      color: lightslategray;
+      background-color: #e4e8ff;
+      border: 0rem;
+    }
+    .reise{
+        border: solid  0.5rem;
+    }
+    </style>
+  </head>
+  <body>
+    <h1>Båtreise - Mykonos til Athen</h1>
+    <section id="section">
+      <h2>Juli 2024</h2>
+      <section id="tabell">
+        <article class="dag">Mandag</article>
+        <article class="dag">Tirsdag</article>
+        <article class="dag">Onsdag</article>
+        <article class="dag">Torsdag</article>
+        <article class="dag">Fredag</article>
+        <article class="dag">Lørdag</article>
+        <article class="dag">Søndag</article>
+        <article>1</article>
+        <article>2</article>
+        <article>3</article>
+        <article>4</article>
+        <article>5</article>
+        <article>6</article>
+        <article class="søndag">7</article>
+        <article class="reise">8</article>
+        <article class="reise">9</article>
+        <article class="reise">10</article>
+        <article class="reise">11</article>
+        <article class="reise">12</article>
+        <article class="reise">13</article>
+        <article class="reise">14</article>
+        <article class="reise">15</article>
+        <article class="reise">16</article>
+        <article class="reise">17</article>
+        <article>18</article>
+        <article>19</article>
+        <article>20</article>
+        <article class="søndag">21</article>
+        <article>22</article>
+        <article>23</article>
+        <article>24</article>
+        <article>25</article>
+        <article>26</article>
+        <article>27</article>
+        <article class="søndag">28</article>
+        <article>29</article>
+        <article>30</article>
+        <article>31</article>
+        <article class="neste">1</article>
+        <article class="neste">2</article>
+        <article class="neste">3</article>
+        <article class="neste">4</article>
+      </section>
+    </section>
+  </body>
+</html>
